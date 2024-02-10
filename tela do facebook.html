@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Facebook</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+a{
+color:#fff;
+text-decoration:none;
+}
+
+        #login-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        #login-header {
+            color: #1877f2;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            background-color: #1877f2;
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #166fe5;
+        }
+
+        #create-account {
+            margin-top: 20px;
+            color: #1877f2;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        #create-account:hover {
+            text-decoration: underline;
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="login-container">
+        <div id="login-header">Facebook</div>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Email ou número de telefone</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+              <button type="submit"><a href="melque.html"> Entrar</a> </button>
+            </div>
+        </form>
+       <a href="melque.html"> <div id="create-account">Criar nova conta</div></a>
+    </div>
+</body>
+</html>
